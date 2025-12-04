@@ -1,0 +1,15 @@
+Unsigned integers are integers that can only hold non-negative whole numbers
+
+unsigned short us;
+unsigned int ui;
+unsigned long ul;
+unsigned long long ull;
+
+1 byte = 8 bits
+1 byte unsigned integer has a range of 0 - 255
+
+Unsigned integer range = 0 to (2^n-1)
+
+If a unsigned value is out of range for example 280, it is out of the 1-byte range
+0-255 so 1 more than the max range (256) is used to do 280 / 256 = 1 remainder 24
+and 24 is stored
