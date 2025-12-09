@@ -1,0 +1,19 @@
+Bit - smallest unit of memory aka a binary digit
+Data type - tells the compiler how to interpret the contents of memory
+Void - used to indicate no type
+Different types take different ammounts of memory and the ammount of memory
+used may vary by machine
+sizeof - can be used to return the size of a type in bytes
+Signed integers - Whole numbers that are positive and negative. Watchout for int overflow + int division
+Unsigned integers - only hold positive whole numbers and 0, should be avoided unless doing bit-level manipulation
+Fixed-width integers - integers with guaranteed sizes but they may not exist on all architextures. 
+Fast + least - Both depend on a specific machine
+size_t - unsigned integral type that is used to represent the size or length of objects
+Scientific notation - a shorthand way of writing lengthy numbers. 
+	Significand - part before the e called significant digits
+Floating point - types to hold real numbers
+	Precision - how many significant digits it can represent without information loss
+	Rounding error - when too many significant digits are stored in a floating point number that can't hold that much
+Boolean - true and false values
+Char - used to store values interpreted as ASCII characters
+
