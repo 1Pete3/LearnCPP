@@ -1,0 +1,17 @@
+2 types of constants
+1. Named constants   - associated with an identifier aka symboloic constants
+2. Literal constants - constant values that are not associated with an identifier
+
+Types of named constants
+- Constant variables
+- Object like macros with substitution text
+- Enumerated constants
+
+Why to use constant variables over preprocessor macros
+- Macros don't follow normal C++ scoping rules
+- Macro substitution behaves differently than everything else in C++
+- Harder to debug code using macros
+
+2 types of type qualifiers
+1. const
+2. volatile
