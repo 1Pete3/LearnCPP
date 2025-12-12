@@ -1,0 +1,28 @@
+Profiler - A program that can be used to see how long various parts of the program
+are taking to run and which are impacting overall performance
+Optimizer - A program that optimizes another program
+- Modern C++ compilers are optimizing compiler, capable of automatically optimizing your
+programs
+The as-if rule - the compiler can modify the program however it likes to produce more optimized
+code, so long as those modifications do not affect the program's observable behavior
+
+Compile-time evaluation
+Modern C++ compilers are capable of fully or partially evaluating certain expressions
+at compile-time (rather than runtime) 
+compile-time evaluation - When the compiler fully or partially evaluates an expression
+at compile time
+
+Constant folding
+One of the original forms of Compile-time evaluation is called constant folding
+constant folding - an optimization technique where the compiler replaces expressions that have 
+literal operands with the result of the expression
+
+Constant propagation - an optimization technique where the compiler replaces variables
+known to have constant values with their values. 
+
+Dead code elimination - the compiler removes code that may be executed but has no
+effect on the programs behavior
+
+Optimization can make programs harder to debug
+variables, expressions, statements, and functions may be rearranged,modified, replaced, or 
+entirely removed
