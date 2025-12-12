@@ -1,0 +1,18 @@
+C++ provides ways for us to be explicit about what parts of code we want to execute at
+compile time.
+Compile-time programming - the use of language features that result in compile-time 
+evaluation
+
+- Performance - Compile-time evaluation makes our programs smaller and faster
+- Versatility - We can always use such code in places that require a compile-time value
+- Predictability - We can have the compiler halt compliation if it determines that code 
+cannot be executed at complie-time
+- Quality - Detect ceratin kinds of programming errors at compile time and halt the 
+build if it encounters them. Undefined behavior is not allowed at compile time
+
+Constant expressions
+Constant expression - non-empty sequence of literals, constant variables, operators and 
+function calls all of which must be evaluated at compile time
+
+An expression that is not a constant expression is often called a non-constant expression
+and may be informally called a runtime expression
