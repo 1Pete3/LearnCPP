@@ -1,0 +1,18 @@
+Constant - a value that may not be changed during the program's execution
+	C++ supports 2 types of constants
+	1. Named constants
+	2. Literals
+Named Constant - a constant value that is associated with an identifier
+Literal Constant - a constant value not associated with an indentifier
+Constant Variable - a variable whose value can not be changed
+Type Qualifier - a keyword that is applied to a type that modifies how that type behaves
+	As of C++ 23 
+	1. const
+	2. volatile
+Constant Expression - an expression that can be evaluated at compile time aka runtime expression
+Runtime Constant - a constant whose initialization value isn't known until runtime
+Constexpr variable - must be a compile-time constant and initialized with a constant expression, function 
+parameters cannot be constexpr
+std::string -  offers an easy and safe way to deal with text strings. Expensive to initialize and copy
+std::string_view - provides read-only access to an existing string without making a copy
+Substring - a contiguous sequence within an existing string
