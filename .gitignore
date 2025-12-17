@@ -420,3 +420,5 @@ FodyWeavers.xsd
 *.sln
 *.vcxproj
 *.filters
+
+*.project.pbxproj
