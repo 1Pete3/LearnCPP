@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string_view>
 
-using namespace std::string_literals;
-
 // Write the function getQuantityPhrase() here
 std::string_view getQuantityPhrase(int apples) {
     if (apples < 0){
