@@ -1,0 +1,6 @@
+Bit manipulation - Modifying individual bits within an object
+- The smallest addressable unit of memory is a byte on modern archetectures
+- Using a byte (8 bits) to store a boolean is wasteful since a boolean is 1 bit (0 or 1)
+- Use bitset or unsigned integers for bit manipulation
+- std::bitset is optimized for speed not memory saving
+	- Thus, a std::bitset<8> will typically use either 4 or 8 bytes of memory, even though it technically only needs 1 byte to store 8 bits. Thus, std::bitset is most useful when we desire convenience, not memory savings.
