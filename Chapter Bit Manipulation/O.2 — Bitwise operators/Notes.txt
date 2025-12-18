@@ -1,0 +1,8 @@
+C++ provides 6 bit manipulation operators, often called bitwise operators:
+Operator	 Symbol	    Form	The operation returns a value where:
+left shift	  <<	    x << n	the bits from x are shifted left by n positions, new bits are 0.
+right shift	  >>	    x >> n	the bits from x are shifted right by n positions, new bits are 0.
+bitwise NOT	  ~	        ~x	    each bit from x is flipped.
+bitwise AND	  &	        x & y	each bit is set when both corresponding bits in x and y are 1.
+bitwise OR	  |	        x | y	each bit is set when either corresponding bit in x and y is 1.
+bitwise XOR	  ^	        x ^ y	each bit is set when the corresponding bits in x and y are different.
