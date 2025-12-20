@@ -1,0 +1,8 @@
+Overhead - All the extra work that must happen to set up, facilitate and/or cleanup after some task like making a function call
+Inline expansion - a process where a function call is replaced by code from the called function's definition
+- Inline code can improve efficiency because the compiler can optimize the statements as constant expressions
+- Inline expansion is best suited for simple short functions
+
+Cons of inline expansion
+- Causes the executable to grow larger possibly and larger executables tend to be slower
+
