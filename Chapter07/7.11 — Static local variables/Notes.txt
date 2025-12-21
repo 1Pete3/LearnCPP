@@ -1,0 +1,5 @@
+Using static on a local variable changes its duration from automatic to static so when it goes out of scope of the
+block it is still available and destroyed at the end of a program instead
+- Non-const static local variables should only be used if in your entire program and in the foreseeable future of your program,
+the variable is unique and it wounldn't make sense to reset the variable
+- Don't use non-const static local variables to alter the flow of the program
