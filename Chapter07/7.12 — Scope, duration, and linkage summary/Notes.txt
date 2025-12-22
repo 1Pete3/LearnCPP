@@ -1,0 +1,44 @@
+Scope Summary
+An identifier’s scope determines where the identifier can be accessed within the source code.
+
+	Block (local) scope
+	- point of declaration to the end of the block in which they are declared
+		- Local variables
+		- Function Parameters
+		- Program-defined type definitions (enums or classes) declared inside a block
+
+	Global scope
+	- Can be accessed from point of declaration to end of file
+		- Global variables
+		- Functions
+		- Program-defined type definitions (enums or classes) declared inside a namespace or in the global scope
+
+Duration Summary
+A variable's duration determines when it is created and destroyed
+	- Automatic duration are created at the point of definition and destroyed when the block they are part of is exited
+		- Local variables
+		- Function parameters
+	- Static duration are created when the program begins and destroyed when the program ends
+		- Global variables
+		- Static local variables
+	- Dynamic duration are created and destroyed by programmer request
+		- Dynamically allocated variables
+
+Linkage Summary
+An identifier's linkage determines whether a declaration of that same identifier in a different scope refers to the same entity or not
+Local variables have no linkage. Each declaration of an identifier with no linkage refers to a unique object or function
+
+	- No linkage means another declaration of an identifier refers to a unique entity
+		- Local variables
+		- Program-defined type identifiers (enums or classes) declared inside a block
+	- Internal linkage means a declaration of the same identifier within the same translation unit refers to the same object or function
+		- Static global variables
+		- Static functions
+		- Const global variables
+		- Unnamed namespaces and anything defined within them
+	- External linkage means a declaration of the same identifier within the entire program refers to the same object or function
+		- Non-static functions
+		- Non-const global variables (initialized or uninitialized)
+		- Extern const global variables
+		- Inline const global variables
+		- Namespaces
