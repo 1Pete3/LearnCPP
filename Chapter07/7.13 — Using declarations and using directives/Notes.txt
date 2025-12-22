@@ -1,0 +1,15 @@
+Qualified name - a name that includes an associated scope
+	std::cout // identifier cout is qualified by namespace std
+	::foo     // identifier foo is qualified by the global namespace
+Unqualified name - a name that does not include a scoping qualifier
+
+Using declaration - unqualified name as an alias
+	using std::cout; cout will be used as an alias for std::cout and prefered if there is a collision
+Using directive - allows all identifiers in a given namespace to referenced without qualification from the scope
+of the using-directive
+	using namespace std; tells the compiler that all names in std should be accessible without qualification in 
+	the current scope
+
+Problems using-directives
+	1. allow unqualified access to all of the names from a namespace including a lot that aren't used
+	2. do not prefer names from the namespace identified by the using directive over other names
