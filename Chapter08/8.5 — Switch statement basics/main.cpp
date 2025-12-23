@@ -17,7 +17,7 @@ void usingSwitch(int x) {
 		printSwitch("Three");
 		break;
 	default:
-		printSwitch("Unkown");
+		printSwitch("Unknown");
 		break;
 	}
 }
