@@ -1,0 +1,15 @@
+Scope Creep - A project's capabilities grow beyond what was originally intended at the start of the project or project phase
+Software Verification - Testing whether or not the software works as expected in all cases
+Unit test - A test designed to test a small portion of the code in isolation to ensure a particular behavior occurs as expected
+Integration testing - Tests the integration of a bunch of units together to ensure they work properly
+Code Coverage - Refers to how much of the source code is executed while testing
+Statement Coverage - Refers to the percentage of statements in a program that have been exercised by testing routines
+Branch Coverage - Refers to the percentage of branches that have been executed by the testing routine
+Loop Coverage - If you have a loop, you should ensure it works properly when it iterates 0,1,2 times
+
+std::cerr is an output stream (like std::cout) designed to be used for error messages
+Precondition - Any condition that must always be true prior to the executation of some segment of code
+Invariant - A condition that must be true while some component is executing
+Postcondition - Any condition that must always be true after execution of some code
+Assertion - An expression that will be true unless there is a bug in the program. C++ runtime assertions are typically implemented using the assert preprocessor micro
+static_assert - An assertion that is evaluated at compile time
