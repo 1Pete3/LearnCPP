@@ -1,0 +1,13 @@
+Numeric Conversions
+1. Converting an integral type to any other integral type (excluding integral promotions).
+2. Converting a floating point type to any other floating point type (excluding floating point promotions).
+3. Convering a floating point type to any integral type
+4. Converting an integral type to any floating point type
+5. Converting an integral type or a floating point type to a bool
+
+Unsafe Conversion - At least one value of the source type cannot be converted into an equal value of the destination type.
+
+3 safety categories
+	1. Value-preserving conversions are safe numeric conversions where the destination type can exactly represent all possible values in the source type
+	2. Reinterpretive Conversions are unsafe numeric conversions where the converted value may be different than the source value but no data is lost. Sign/unsigned conversions
+	3. Lossy Conversions where data may be lost during the conversion double to int
