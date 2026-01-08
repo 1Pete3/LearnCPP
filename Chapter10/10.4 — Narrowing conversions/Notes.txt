@@ -1,0 +1,8 @@
+Narrowing Conversion - A potentially unsafe numeric conversion where the destination type may not be able to hold all the values of the source type
+	- Floating point type -> integral type
+	- Floating point type -> narrower or less ranked floating point type unless the value being converted is constexpr and is in range of the destination 
+	type
+	- Integral -> FLoating point type, unless the value being converted is constexpr and whose value can be stored exactly in the destination type
+	- Integral type -> another integral type. Both wider and narrower integral conversions as well as integral sign conversions
+
+Brace initialization disallows narrowing conversions, but you can use static_cast
