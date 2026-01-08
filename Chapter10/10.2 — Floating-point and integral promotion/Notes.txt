@@ -1,0 +1,11 @@
+Numeric Promotion - type conversion of certain narrower numeric types to certain wider numeric types that
+can be processed efficiently. (char) -> (int or double)
+Value-Preserving Conversion (Safe Conversion) - Every possible source value can be converted into an equal value of the destiation type
+
+Numeric Promotion Rules
+	1. Integral Promotions 
+		- signed char or signed short can be converted to int
+		- unsigned char, char8_t, and unsigned short can be converted to int if int can hold the entire range of the type, or unsigned int otherwise
+		- If char is signed by default, it follows the signed char conversion rules above. If it is unsigned by default it follows the unsigned char conversion rules above.
+		- Bool can be converted to int, with false = 0 and true = 1
+	2. Floating Point Promotions - Value of type float can be converted into type double
