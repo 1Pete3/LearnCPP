@@ -1,0 +1,5 @@
+Using type aliases
+- To hide platform specific details
+- Makes complex types easier to read
+- Meaning of a value
+- Code maintenance
