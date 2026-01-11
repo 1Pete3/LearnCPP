@@ -1,0 +1,10 @@
+In main.cpp 
+
+1. The compiler checks whether an exact match to foo(X) exists
+2. Compiler checks if x can be numerically promoted
+3. Compiler checks if x can be numerically converted
+4. Compiler looks for user defined conversions and promoted the result to an int to match
+5. If no user defined conversion is found, the compiler will look for a matching function that uses ellipsis
+6. If no matches have been found by this point the compiler gives up and will issue a compile error about not being able to find a matching function
+
+Ambiguos match - The compiler finds two or more functions that can be made to match in the same step
