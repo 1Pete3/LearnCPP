@@ -1,0 +1,11 @@
+Non-type template parameter - Template parameter with a fixed type that serves as a placeholder for a constexpr value passed in as a template argument
+	- An integral type
+	- An enumeration type
+	- std::nullptr_t
+	- A floating point type
+	- A pointer or reference to an object
+	- A pointer or reference to a function
+	- A pointer or reference to a member function
+	- A literal class type
+If we want to use static_assert that requires a constant expression we can use a non-type template parameter since function parameters can't be constexpr
+Non-type template parameters are used primarily when we need to pass constexpr values to functions (or class types) so they can be used in contexts that require a constant expression.
