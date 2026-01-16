@@ -1,0 +1,15 @@
+Chapter 11 Summary
+> Function Overloading - Allows us to create multiple functions with the same name so long as each identically named
+  function has different set of parameter types
+> Overload resolution - When a function call is made to a function that has been overloaded
+  the compiler will try to match the function call to the appropriate overload based on the arguments used in the function call
+> Ambiguous Match - Occurs when the compiler finds two or more functions that can match a function call to an overloaded function 
+  and can't determine which one is best
+> Default argument - A default value provided for a function parameter. Parameters with default arguments must always be the right 
+  most parameters and they are not used to differentiate functions when resolving overloaded functions
+> Function Templates - Create a function-like definition that servers as a pattern for creating related functions.
+> Type Template Parameters - Placeholders for any types we want to be specified later.
+> Template Parameter Declaration  - The syntax that tells the compiler we're defining a template and declares the template types 
+> Function Template Instaniation - Creating functions with specific types from function templates with template types
+> Non-Type Template Parameter - a template parameter with a fixed type that serves as a place holder for a constexpr value passed in 
+  as a template argument
