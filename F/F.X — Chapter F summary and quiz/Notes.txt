@@ -1,0 +1,7 @@
+Constexpr - A function that is allowed to be called in a constant expression.
+	- Evaluated at compile time when used in a context that requires a constant expression otherwise 
+	  they may be  evaluated  at compile time or runtime
+	- Implicitly Inline and the compiler must see the  full definition of the constexpr function to call
+	  it at compile time
+Consteval function - A function that must evaluate at compile time.
+	- Consteval functions otherwise follow the same rules as constexpr function
