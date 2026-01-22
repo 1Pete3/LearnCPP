@@ -1,0 +1,2 @@
+- Fundamental types and enumerated types are cheap to copy so they are typically  passed by const reference
+- Class types can be expensive to copy so they are typically passed by const reference
