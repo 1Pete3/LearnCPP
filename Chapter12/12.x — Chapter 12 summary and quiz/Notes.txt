@@ -1,0 +1,7 @@
+Compound data types - data types that can be constructed from fundamental data types
+Value category - indicates whether an expression resolves to a value, a function, or an object of some kind
+lvalue - an expression that evaluates to a function or an object that has an identity
+rvalue - an expression that is not an l-value. This includes literals except string literals and the return values of function or operators
+Reference - an alias for an existing object 
+	- references can't be reseated
+	- dangling references lead to undefined behavior
