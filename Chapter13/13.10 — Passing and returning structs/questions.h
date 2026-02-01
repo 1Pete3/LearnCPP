@@ -18,7 +18,9 @@ namespace question2 {
 		int denominator{ 1 };
 	};
 
-	void readFractions();
+	Fraction getFraction();
+	constexpr Fraction multiply(const Fraction& f1, const Fraction& f2);
+	void printFraction(const Fraction& f);
 }
 
 #endif

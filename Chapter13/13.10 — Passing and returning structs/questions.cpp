@@ -14,66 +14,26 @@ namespace question1 {
 }
 
 namespace question2 {
-	void ignoreLine() {
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+	Fraction getFraction()
+	{
+		Fraction temp{};
+		std::cout << "Enter a value for numerator: ";
+		std::cin >> temp.numerator;
+		std::cout << "Enter a value for denominator: ";
+		std::cin >> temp.denominator;
+		std::cout << '\n';
+
+		return temp;
 	}
 
-	bool clearFailedExtraction() {
-		if (!std::cin) {
-			if (std::cin.eof()) {
-				std::exit(0);
-			}
-			std::cin.clear();
-			ignoreLine();
-			return true;
-		}
-		return false;
+	constexpr Fraction multiply(const Fraction& f1, const Fraction& f2)
+	{
+		return { f1.numerator * f2.numerator, f1.denominator * f2.denominator };
 	}
 
-
-	void readFractions() {
-		int numerator1{};
-		int numerator2{};
-		int denominator1{};
-		int denominator2{};
-
-		while (true) {
-			std::cout << "Enter a value for the numerator: ";
-			std::cin >> numerator1;
-			if (clearFailedExtraction() || numerator1 == 0) {
-				std::cout << "Oops, that input is invalid.  Please try again.\n";
-				continue;
-			}
-
-			std::cout << "Enter a value for the denominator: ";
-			std::cin >> denominator1;
-			if (clearFailedExtraction() || denominator1 == 0) {
-				std::cout << "Oops, that input is invalid.  Please try again.\n";
-				continue;
-			}
-
-			std::cout << "Enter a value for the numerator: ";
-			std::cin >> numerator2;
-			if (clearFailedExtraction() || numerator2 == 0) {
-				std::cout << "Oops, that input is invalid.  Please try again.\n";
-				continue;
-			}
-
-			std::cout << "Enter a value for the denominator: ";
-			std::cin >> denominator1;
-			if (clearFailedExtraction() || denominator1 == 0) {
-				std::cout << "Oops, that input is invalid.  Please try again.\n";
-				continue;
-			}
-
-
-			ignoreLine();
-			break;
-		}
-
-		std::cout << denominator1;
+	void printFraction(const Fraction& f)
+	{
+		std::cout << f.numerator << '/' << f.denominator << '\n';
 	}
-
-
-
 }
