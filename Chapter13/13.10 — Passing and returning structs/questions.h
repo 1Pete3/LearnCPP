@@ -21,6 +21,7 @@ namespace question2 {
 	Fraction getFraction();
 	constexpr Fraction multiply(const Fraction& f1, const Fraction& f2);
 	void printFraction(const Fraction& f);
+	void question2();
 }
 
 #endif

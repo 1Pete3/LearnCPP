@@ -25,7 +25,8 @@ int main()
     printEmployee({ 15, 28, 18.27 }); // No frank variable as a parameter, considered implicit conversion
 
     question1::printAdRevenue(question1::AdRevenue{10,0.14,16.26 });
-    question2::readFractions();
+    
+    question2::question2();
 
     return EXIT_SUCCESS;
 }

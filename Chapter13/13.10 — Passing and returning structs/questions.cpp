@@ -36,4 +36,11 @@ namespace question2 {
 	{
 		std::cout << f.numerator << '/' << f.denominator << '\n';
 	}
+
+	void question2() {
+		Fraction f1{ question2::getFraction() };
+		Fraction f2{ question2::getFraction() };
+		std::cout << "Your fractions multiplied together: ";
+		printFraction(multiply(f1, f2));
+	}
 }
