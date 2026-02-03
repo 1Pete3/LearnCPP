@@ -1,0 +1,14 @@
+Program Defined Type (User Defined Type) - A custom type that we can create for use in our own programs.
+	- Enumerated types and class types (structs, classes, and unions)
+
+Type Definition - The definition of a program-defined type
+	- Type definitions are exempt from the one-definition rule
+
+Enumeration - A compound data type where every possible value is defined as a symbolic constant
+
+Unscoped enumerations - They put their enumerator names into the same scope as the enumeration definition itself
+	- Will implicitly convert to integral values
+
+Scoped enumerations - won't implicitly conver to integers and enumerators are only placed into the scope region of the enumeration
+
+Struct - A program defined data type that allows us to bundle multiple variables together into a single type
