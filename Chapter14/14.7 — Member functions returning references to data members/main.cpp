@@ -1,0 +1,20 @@
+﻿#include <iostream>
+#include <cstdlib>
+#include <string>
+
+class Employee {
+	std::string m_name{};
+
+public:
+	void setName(std::string_view name) { m_name = name; }
+	const std::string& getName() const { return m_name; }
+};
+
+int main()
+{
+	Employee joe{};
+	joe.setName("Joe");
+	std::cout << "Employee name is " << joe.getName() << std::endl;
+	return EXIT_SUCCESS;
+}
+
