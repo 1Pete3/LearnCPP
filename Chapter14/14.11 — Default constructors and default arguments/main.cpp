@@ -6,9 +6,10 @@ class Foo {
         int m_y{};
 
     public:
-        Foo() {
+        Foo() = default;
+        /*Foo() {
             std::cout << "Foo constructed" << std::endl;
-        }
+        }*/
 
         Foo(int x = 0, int y = 0):
         m_x{x},
@@ -20,7 +21,7 @@ class Foo {
 
 int main()
 {
-    Foo foo1{};
+    //Foo foo1{};
     Foo foo2{ 6,7 };
     return EXIT_SUCCESS;
 }
